@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BirdsCountingApp</string>
+    <string name="label_seeRedBird">See red bird!</string>
+    <string name="label_seeBlueBird">See blue bird!</string>
+    <string name="label_seeGreenBird">See green bird!</string>
+    <string name="label_seeYellowBird">See yellow bird!</string>
+    <string name="label_reset">Reset</string>
+</resources>

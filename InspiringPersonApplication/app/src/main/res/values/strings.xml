@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InspiringPersonApplication</string>
+    <string name="newInspiringPersonHeadline">Add new inspiring person</string>
+    <string name="nameHint">Enter inspiring person name</string>
+    <string name="dateOfBirthAndDeathHint">Enter inspiring person date of birth/death</string>
+    <string name="descriptionHint">Enter inspiring person description</string>
+    <string name="quoteHint">Enter inspiring person quote</string>
+    <string name="add">ADD</string>
+</resources>

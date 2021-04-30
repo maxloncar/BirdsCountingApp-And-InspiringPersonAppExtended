@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layoutPadding"
+    tools:context=".AddNewInspiringPersonActivity">
+
+    <TextView
+        android:id="@+id/tvNewInspiringPerson"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:text="@string/newInspiringPersonHeadline"
+        android:textAlignment="center"
+        android:textSize="@dimen/headlineTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNameInput"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/layoutMargin"
+        app:layout_constraintTop_toBottomOf="@id/tvNewInspiringPerson">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/nameHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDateOfBirthAndDeathInput"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/layoutMargin"
+        app:layout_constraintTop_toBottomOf="@id/tilNameInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietDateOfBirthAndDeathInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/dateOfBirthAndDeathHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilQuoteInput"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/layoutMargin"
+        app:layout_constraintTop_toBottomOf="@id/tilDateOfBirthAndDeathInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietQuoteInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:hint="@string/quoteHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDescriptionInput"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/match_constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/layoutMargin"
+        app:layout_constraintTop_toBottomOf="@id/tilQuoteInput"
+        app:layout_constraintBottom_toTopOf="@id/bAdd">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietDescriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/descriptionHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bAdd"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilQuoteInput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/layoutMargin"
+        android:text="@string/add"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

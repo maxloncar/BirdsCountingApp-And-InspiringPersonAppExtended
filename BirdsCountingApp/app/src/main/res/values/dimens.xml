@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="guidelineMargin">16dp</dimen>
+    <dimen name="counterMargin">30dp</dimen>
+    <dimen name="buttonsMargin">50dp</dimen>
+    <dimen name="counterTextSize">100sp</dimen>
+</resources>

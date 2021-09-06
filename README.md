@@ -1,5 +1,5 @@
-# RMA-LV3
-Laboratorijska vježba 3 - Zadatak 1 i Zadatak 2
+# BirdsCountingApp & InspiringPersonApplication (extended version) RMA-LV3
+Razvoj mobilnih aplikacija (Mobile Development)
 
 Zadatak 1 - BirdsCountingApp
 
